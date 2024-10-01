@@ -15,11 +15,11 @@
 
 ## Installation
 ```sh
-Hyde theme patch "Paranoid Sweet" https://github.com/rishav12s/Paranoid-Sweet
+Hyde theme import "Paranoid Sweet" https://github.com/rishav12s/Paranoid-Sweet
 ```
 or 
 ```sh
-Hyde theme patch
+Hyde theme import
 ```
 and choose Paranoid Sweet
 
