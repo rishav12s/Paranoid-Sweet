@@ -1,8 +1,17 @@
 $HOME/.config/hypr/themes/theme.conf|> $HOME/.config/hypr/themes/colors.conf
-exec = gsettings set org.gnome.desktop.interface icon-theme 'candy-icons'
-exec = gsettings set org.gnome.desktop.interface gtk-theme 'Sweet-Dark'
-exec = gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
-exec = Hyde cursor theme 'Sweet-cursors' size 20
+
+$GTK_THEME = Sweet-Dark
+$ICON_THEME = candy-icons
+$COLOR_SCHEME=prefer-dark
+$CURSOR_THEME = Sweet-cursors
+$CURSOR_SIZE=20
+$CODE_THEME=Modern Purple Theme Dark
+
+exec = gsettings set org.gnome.desktop.interface icon-theme '$ICON_THEME'
+exec = gsettings set org.gnome.desktop.interface gtk-theme '$GTK_THEME'
+exec = gsettings set org.gnome.desktop.interface color-scheme '$COLOR_SCHEME'
+exec = Hyde cursor theme '$CURSOR_THEME' size $CURSOR_SIZE
+exec = Hyde code theme '$CODE_THEME'
 
 general {
     gaps_in = 3
